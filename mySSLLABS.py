@@ -3,8 +3,8 @@
 import tldextract, socket, ssl, datetime, logging, requests, OpenSSL
 from datetime import date
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.poolmanager import PoolManager
-from requests.packages.urllib3.util import ssl_
+import urllib3
+
 
 logging.basicConfig(filename='wessy.log', level=logging.DEBUG)
 global certscore
